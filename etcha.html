@@ -48,9 +48,9 @@
           row.style.height = getSize(gridSize);
           row.verticalAlign = 'top';
           row.style.display = 'inline-block';
-          row.onmouseover = function() {
-            return row.style.backgroundColor = getColor();
-          };
+          row.addEventListener ('mouseover', function(e) {
+            return row.style.backgroundColor = getColor(e.target);
+          });
         }
 
       }
@@ -68,7 +68,7 @@
         createGrid(x);
       }
 
-      function getColor() {
+      function getColor(cell) {
         if (currentBrush === 'black') {
             return 'black';
           } else if (currentBrush === 'rgb') {
@@ -76,12 +76,11 @@
           } else if (currentBrush === 'erase') {
             return 'white';
           } else if (currentBrush === 'shade') {
-            getShade();
+            getShade(cell);
           }
       }
 
-      function getShade() {
-        var row = document.querySelector('#grids');
+      function getShade(row) {
         if (row.style.backgroundColor === 'black') {
           return;
         } else if (row.style.opacity === 0) {
