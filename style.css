@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  END OF RESET */
+
+body {
+  background-color: #DEDEDE;
+}
+
+#mainContainer {
+  width: 720px;
+  height: 720px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 0;
+  border: 5px #CDCDCD solid;
+}
+button {
+  height: 36px;
+  line-height: 27px;
+  -moz-border-radius: 2px;
+  -moz-user-select: none;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 17px;
+  color: #5F6368;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  margin-top: 25px;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+button:hover {
+  background-image: -moz-linear-gradient(bottom, #fff, #e8e8e8);
+  background-image: -webkit-linear-gradient(bottom, #fff, #e8e8e8);
+  color: #222;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+#black {
+  position: absolute;
+  left: 30%;
+  top: 3%;
+  -ms-transform: translate(10%, 5%);
+  transform: translate(10%, 5%);
+}
+#shader {
+  position: absolute;
+  left: 36%;
+  top: 3%;
+  -ms-transform: translate(10%, 5%);
+  transform: translate(10%, 5%);
+}
+#rgb {
+  position: absolute;
+  left: 43%;
+  top: 3%;
+  -ms-transform: translate(10%, 5%);
+  transform: translate(10%, 5%);
+}
+#erase {
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  -ms-transform: translate(10%, 5%);
+  transform: translate(10%, 5%);
+}
+#reset {
+  position: absolute;
+  left: 57%;
+  top: 3%;
+  -ms-transform: translate(10%, 5%);
+  transform: translate(10%, 5%);
+}
